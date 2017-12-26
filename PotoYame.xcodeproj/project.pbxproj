@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018585A91FF0CB580004617F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585A81FF0CB580004617F /* AppDelegate.swift */; };
+		018585AB1FF0CB580004617F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585AA1FF0CB580004617F /* ViewController.swift */; };
+		018585AE1FF0CB580004617F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018585AC1FF0CB580004617F /* Main.storyboard */; };
+		018585B01FF0CB580004617F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018585AF1FF0CB580004617F /* Assets.xcassets */; };
+		018585B31FF0CB580004617F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018585B11FF0CB580004617F /* LaunchScreen.storyboard */; };
+		018585BE1FF0CB580004617F /* PotoYameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585BD1FF0CB580004617F /* PotoYameTests.swift */; };
+		018585C91FF0CB590004617F /* PotoYameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585C81FF0CB590004617F /* PotoYameUITests.swift */; };
+		018585D81FF0D09C0004617F /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585D71FF0D09C0004617F /* BaseTabBarController.swift */; };
+		018585DA1FF0D3960004617F /* BaseTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585D91FF0D3960004617F /* BaseTabbar.swift */; };
+		018585DC1FF0F9CD0004617F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585DB1FF0F9CC0004617F /* Theme.swift */; };
+		018585DF1FF0FA6A0004617F /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585DE1FF0FA6A0004617F /* UIColorExtensions.swift */; };
+		018585E31FF104920004617F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585E21FF104920004617F /* HomeViewController.swift */; };
+		018585E61FF104C40004617F /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585E51FF104C40004617F /* ShowViewController.swift */; };
+		018585E81FF107180004617F /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585E71FF107180004617F /* FriendViewController.swift */; };
+		018585EA1FF107440004617F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585E91FF107440004617F /* SettingViewController.swift */; };
+		018585ED1FF10AC00004617F /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585EC1FF10AC00004617F /* BaseNavigationController.swift */; };
+		018585EF1FF10BD00004617F /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585EE1FF10BD00004617F /* UIImageExtensions.swift */; };
+		018586371FF221140004617F /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018586361FF221140004617F /* CenterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		018585BA1FF0CB580004617F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0185859D1FF0CB580004617F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 018585A41FF0CB580004617F;
+			remoteInfo = PotoYame;
+		};
+		018585C51FF0CB580004617F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0185859D1FF0CB580004617F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 018585A41FF0CB580004617F;
+			remoteInfo = PotoYame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		018585A51FF0CB580004617F /* PotoYame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PotoYame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		018585A81FF0CB580004617F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		018585AA1FF0CB580004617F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		018585AD1FF0CB580004617F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		018585AF1FF0CB580004617F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		018585B21FF0CB580004617F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		018585B41FF0CB580004617F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		018585B91FF0CB580004617F /* PotoYameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotoYameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		018585BD1FF0CB580004617F /* PotoYameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotoYameTests.swift; sourceTree = "<group>"; };
+		018585BF1FF0CB580004617F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		018585C41FF0CB580004617F /* PotoYameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotoYameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		018585C81FF0CB590004617F /* PotoYameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotoYameUITests.swift; sourceTree = "<group>"; };
+		018585CA1FF0CB590004617F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		018585D71FF0D09C0004617F /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		018585D91FF0D3960004617F /* BaseTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabbar.swift; sourceTree = "<group>"; };
+		018585DB1FF0F9CC0004617F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		018585DE1FF0FA6A0004617F /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		018585E21FF104920004617F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		018585E51FF104C40004617F /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		018585E71FF107180004617F /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		018585E91FF107440004617F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		018585EC1FF10AC00004617F /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		018585EE1FF10BD00004617F /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		018586361FF221140004617F /* CenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		018585A21FF0CB580004617F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018585B61FF0CB580004617F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018585C11FF0CB580004617F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0185859C1FF0CB580004617F = {
+			isa = PBXGroup;
+			children = (
+				018585A71FF0CB580004617F /* PotoYame */,
+				018585BC1FF0CB580004617F /* PotoYameTests */,
+				018585C71FF0CB590004617F /* PotoYameUITests */,
+				018585A61FF0CB580004617F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		018585A61FF0CB580004617F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				018585A51FF0CB580004617F /* PotoYame.app */,
+				018585B91FF0CB580004617F /* PotoYameTests.xctest */,
+				018585C41FF0CB580004617F /* PotoYameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		018585A71FF0CB580004617F /* PotoYame */ = {
+			isa = PBXGroup;
+			children = (
+				018585A81FF0CB580004617F /* AppDelegate.swift */,
+				018585AA1FF0CB580004617F /* ViewController.swift */,
+				018585DB1FF0F9CC0004617F /* Theme.swift */,
+				018585E41FF104980004617F /* TabController */,
+				018585DD1FF0FA280004617F /* Extensions */,
+				018585EB1FF109C00004617F /* Navi */,
+				018585D61FF0D06A0004617F /* Tab */,
+				018585AC1FF0CB580004617F /* Main.storyboard */,
+				018585AF1FF0CB580004617F /* Assets.xcassets */,
+				018585B11FF0CB580004617F /* LaunchScreen.storyboard */,
+				018585B41FF0CB580004617F /* Info.plist */,
+			);
+			path = PotoYame;
+			sourceTree = "<group>";
+		};
+		018585BC1FF0CB580004617F /* PotoYameTests */ = {
+			isa = PBXGroup;
+			children = (
+				018585BD1FF0CB580004617F /* PotoYameTests.swift */,
+				018585BF1FF0CB580004617F /* Info.plist */,
+			);
+			path = PotoYameTests;
+			sourceTree = "<group>";
+		};
+		018585C71FF0CB590004617F /* PotoYameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				018585C81FF0CB590004617F /* PotoYameUITests.swift */,
+				018585CA1FF0CB590004617F /* Info.plist */,
+			);
+			path = PotoYameUITests;
+			sourceTree = "<group>";
+		};
+		018585D61FF0D06A0004617F /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				018585D71FF0D09C0004617F /* BaseTabBarController.swift */,
+				018585D91FF0D3960004617F /* BaseTabbar.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		018585DD1FF0FA280004617F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				018585DE1FF0FA6A0004617F /* UIColorExtensions.swift */,
+				018585EE1FF10BD00004617F /* UIImageExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		018585E41FF104980004617F /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				018585E21FF104920004617F /* HomeViewController.swift */,
+				018585E51FF104C40004617F /* ShowViewController.swift */,
+				018585E71FF107180004617F /* FriendViewController.swift */,
+				018585E91FF107440004617F /* SettingViewController.swift */,
+				018586361FF221140004617F /* CenterViewController.swift */,
+			);
+			path = TabController;
+			sourceTree = "<group>";
+		};
+		018585EB1FF109C00004617F /* Navi */ = {
+			isa = PBXGroup;
+			children = (
+				018585EC1FF10AC00004617F /* BaseNavigationController.swift */,
+			);
+			path = Navi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		018585A41FF0CB580004617F /* PotoYame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 018585CD1FF0CB590004617F /* Build configuration list for PBXNativeTarget "PotoYame" */;
+			buildPhases = (
+				018585A11FF0CB580004617F /* Sources */,
+				018585A21FF0CB580004617F /* Frameworks */,
+				018585A31FF0CB580004617F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PotoYame;
+			productName = PotoYame;
+			productReference = 018585A51FF0CB580004617F /* PotoYame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		018585B81FF0CB580004617F /* PotoYameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 018585D01FF0CB590004617F /* Build configuration list for PBXNativeTarget "PotoYameTests" */;
+			buildPhases = (
+				018585B51FF0CB580004617F /* Sources */,
+				018585B61FF0CB580004617F /* Frameworks */,
+				018585B71FF0CB580004617F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				018585BB1FF0CB580004617F /* PBXTargetDependency */,
+			);
+			name = PotoYameTests;
+			productName = PotoYameTests;
+			productReference = 018585B91FF0CB580004617F /* PotoYameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		018585C31FF0CB580004617F /* PotoYameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 018585D31FF0CB590004617F /* Build configuration list for PBXNativeTarget "PotoYameUITests" */;
+			buildPhases = (
+				018585C01FF0CB580004617F /* Sources */,
+				018585C11FF0CB580004617F /* Frameworks */,
+				018585C21FF0CB580004617F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				018585C61FF0CB580004617F /* PBXTargetDependency */,
+			);
+			name = PotoYameUITests;
+			productName = PotoYameUITests;
+			productReference = 018585C41FF0CB580004617F /* PotoYameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0185859D1FF0CB580004617F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ciefky;
+				TargetAttributes = {
+					018585A41FF0CB580004617F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					018585B81FF0CB580004617F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 018585A41FF0CB580004617F;
+					};
+					018585C31FF0CB580004617F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 018585A41FF0CB580004617F;
+					};
+				};
+			};
+			buildConfigurationList = 018585A01FF0CB580004617F /* Build configuration list for PBXProject "PotoYame" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0185859C1FF0CB580004617F;
+			productRefGroup = 018585A61FF0CB580004617F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				018585A41FF0CB580004617F /* PotoYame */,
+				018585B81FF0CB580004617F /* PotoYameTests */,
+				018585C31FF0CB580004617F /* PotoYameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		018585A31FF0CB580004617F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018585B31FF0CB580004617F /* LaunchScreen.storyboard in Resources */,
+				018585B01FF0CB580004617F /* Assets.xcassets in Resources */,
+				018585AE1FF0CB580004617F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018585B71FF0CB580004617F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018585C21FF0CB580004617F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		018585A11FF0CB580004617F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018585AB1FF0CB580004617F /* ViewController.swift in Sources */,
+				018585EA1FF107440004617F /* SettingViewController.swift in Sources */,
+				018585DC1FF0F9CD0004617F /* Theme.swift in Sources */,
+				018586371FF221140004617F /* CenterViewController.swift in Sources */,
+				018585DA1FF0D3960004617F /* BaseTabbar.swift in Sources */,
+				018585E31FF104920004617F /* HomeViewController.swift in Sources */,
+				018585EF1FF10BD00004617F /* UIImageExtensions.swift in Sources */,
+				018585E81FF107180004617F /* FriendViewController.swift in Sources */,
+				018585DF1FF0FA6A0004617F /* UIColorExtensions.swift in Sources */,
+				018585E61FF104C40004617F /* ShowViewController.swift in Sources */,
+				018585ED1FF10AC00004617F /* BaseNavigationController.swift in Sources */,
+				018585A91FF0CB580004617F /* AppDelegate.swift in Sources */,
+				018585D81FF0D09C0004617F /* BaseTabBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018585B51FF0CB580004617F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018585BE1FF0CB580004617F /* PotoYameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018585C01FF0CB580004617F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018585C91FF0CB590004617F /* PotoYameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		018585BB1FF0CB580004617F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 018585A41FF0CB580004617F /* PotoYame */;
+			targetProxy = 018585BA1FF0CB580004617F /* PBXContainerItemProxy */;
+		};
+		018585C61FF0CB580004617F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 018585A41FF0CB580004617F /* PotoYame */;
+			targetProxy = 018585C51FF0CB580004617F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		018585AC1FF0CB580004617F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				018585AD1FF0CB580004617F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		018585B11FF0CB580004617F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				018585B21FF0CB580004617F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		018585CB1FF0CB590004617F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		018585CC1FF0CB590004617F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		018585CE1FF0CB590004617F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5P7L7Q852;
+				INFOPLIST_FILE = PotoYame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ciefky.PotoYame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		018585CF1FF0CB590004617F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5P7L7Q852;
+				INFOPLIST_FILE = PotoYame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ciefky.PotoYame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		018585D11FF0CB590004617F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PotoYameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ciefky.PotoYameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PotoYame.app/PotoYame";
+			};
+			name = Debug;
+		};
+		018585D21FF0CB590004617F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PotoYameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ciefky.PotoYameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PotoYame.app/PotoYame";
+			};
+			name = Release;
+		};
+		018585D41FF0CB590004617F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PotoYameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ciefky.PotoYameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PotoYame;
+			};
+			name = Debug;
+		};
+		018585D51FF0CB590004617F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PotoYameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ciefky.PotoYameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PotoYame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		018585A01FF0CB580004617F /* Build configuration list for PBXProject "PotoYame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018585CB1FF0CB590004617F /* Debug */,
+				018585CC1FF0CB590004617F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		018585CD1FF0CB590004617F /* Build configuration list for PBXNativeTarget "PotoYame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018585CE1FF0CB590004617F /* Debug */,
+				018585CF1FF0CB590004617F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		018585D01FF0CB590004617F /* Build configuration list for PBXNativeTarget "PotoYameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018585D11FF0CB590004617F /* Debug */,
+				018585D21FF0CB590004617F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		018585D31FF0CB590004617F /* Build configuration list for PBXNativeTarget "PotoYameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018585D41FF0CB590004617F /* Debug */,
+				018585D51FF0CB590004617F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0185859D1FF0CB580004617F /* Project object */;
+}

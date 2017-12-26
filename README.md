@@ -1,2 +1,2 @@
 # PotoYame
-a demo 
+Hello init！
