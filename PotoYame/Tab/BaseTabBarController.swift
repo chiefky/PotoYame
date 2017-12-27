@@ -13,24 +13,8 @@ var tabBarHeight = 83.0
 
 class BaseTabBarController: UITabBarController {
     
-    var defaultTabBar = BaseTabBar()
-    
     static let sharedInstance = BaseTabBarController()
 
-//    override var tabBar: UITabBar {
-//        get {
-//            return defaultTabBar
-//        }
-//
-//        set(newTab) {
-//            if newTab is BaseTabBar {
-//                defaultTabBar = newTab as! BaseTabBar
-//            } else {
-//                print("incorrect chassis type for racecar")
-//            }
-//        }
-//    }
-//
     
     override func viewDidLoad() {
         super.viewDidLoad()

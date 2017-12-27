@@ -9,7 +9,7 @@
 import UIKit
 
 class BaseTabBar: UITabBar {
-    var plusButnSize = CGSize(width: 60, height: 60)
+    var plusButnSize = CGSize(width: 80, height: 80)
     var centerIndex = 1
     
      fileprivate lazy var plusBtn:UIButton = {
@@ -77,7 +77,28 @@ class BaseTabBar: UITabBar {
         print("plus +++ ")
     }
 
-    
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        
+        if self.clipsToBounds || self.isHidden || self.alpha == 0 {
+            return nil
+        }
+        
+        var result = super.hitTest(point, with: event)
+        if (result != nil) {
+            return result
+        }
+        
+        for view in self.subviews {
+            let subPoint = view.convert(point, from: self)
+            result = view.hitTest(subPoint, with: event)
+            if result != nil {
+                return result
+            }
+        }
+        
+        return nil
+        
+    }
     
 //    // 重写hitTest方法，让超出tabBar部分也能响应事件
 //    - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event

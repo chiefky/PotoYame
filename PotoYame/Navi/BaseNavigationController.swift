@@ -12,7 +12,7 @@ class BaseNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarController?.tabBar.shadowImage = UIImage(DefaultTheme.commonYellowColor)
+        self.tabBarController?.tabBar.shadowImage = UIImage(DefaultTheme.themeColor)
         self.navigationBar.shadowImage = UIImage()
     }
     
@@ -47,7 +47,7 @@ extension BaseNavigationController {
         
         switch style {
         case .custom:
-            button.setTitleColor(DefaultTheme.navTitleFontColor, for: .normal)
+            button.setTitleColor(DefaultTheme.naviTitleColor, for: .normal)
         case .back:
             button.setTitleColor(UIColor(hexValue:0x999999), for: .normal)
         }

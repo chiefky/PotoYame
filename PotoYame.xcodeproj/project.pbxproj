@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0139E1CF1FF38FDB00307DE6 /* BaseCustonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139E1CE1FF38FDB00307DE6 /* BaseCustonButton.swift */; };
+		0139E1D11FF39FD500307DE6 /* PotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139E1D01FF39FD500307DE6 /* PotoView.swift */; };
 		018585A91FF0CB580004617F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585A81FF0CB580004617F /* AppDelegate.swift */; };
 		018585AB1FF0CB580004617F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585AA1FF0CB580004617F /* ViewController.swift */; };
 		018585AE1FF0CB580004617F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018585AC1FF0CB580004617F /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0139E1CE1FF38FDB00307DE6 /* BaseCustonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustonButton.swift; sourceTree = "<group>"; };
+		0139E1D01FF39FD500307DE6 /* PotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotoView.swift; sourceTree = "<group>"; };
 		018585A51FF0CB580004617F /* PotoYame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PotoYame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		018585A81FF0CB580004617F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		018585AA1FF0CB580004617F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0139E1CD1FF38FAE00307DE6 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0139E1CE1FF38FDB00307DE6 /* BaseCustonButton.swift */,
+				0139E1D01FF39FD500307DE6 /* PotoView.swift */,
+			);
+			path = buttons;
+			sourceTree = "<group>";
+		};
 		0185859C1FF0CB580004617F = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 				018585A81FF0CB580004617F /* AppDelegate.swift */,
 				018585AA1FF0CB580004617F /* ViewController.swift */,
 				018585DB1FF0F9CC0004617F /* Theme.swift */,
+				0139E1CD1FF38FAE00307DE6 /* buttons */,
 				018585E41FF104980004617F /* TabController */,
 				018585DD1FF0FA280004617F /* Extensions */,
 				018585EB1FF109C00004617F /* Navi */,
@@ -334,6 +348,8 @@
 				018585E81FF107180004617F /* FriendViewController.swift in Sources */,
 				018585DF1FF0FA6A0004617F /* UIColorExtensions.swift in Sources */,
 				018585E61FF104C40004617F /* ShowViewController.swift in Sources */,
+				0139E1D11FF39FD500307DE6 /* PotoView.swift in Sources */,
+				0139E1CF1FF38FDB00307DE6 /* BaseCustonButton.swift in Sources */,
 				018585ED1FF10AC00004617F /* BaseNavigationController.swift in Sources */,
 				018585A91FF0CB580004617F /* AppDelegate.swift in Sources */,
 				018585D81FF0D09C0004617F /* BaseTabBarController.swift in Sources */,
