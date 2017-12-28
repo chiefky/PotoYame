@@ -14,6 +14,14 @@ class ShowViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = DefaultTheme.labelBlackColor
 
+        let customButn = BaseCustonButton(type: .custom)
+        customButn.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        customButn.setImage(#imageLiteral(resourceName: "Rukia"), for: .normal)
+        customButn.center = self.view.center
+        self.view.addSubview(customButn)
+        customButn.addTarget(self, action: #selector(applyButtonAction), for: .touchUpInside)
+
+        
         // Do any additional setup after loading the view.
     }
 
@@ -22,7 +30,10 @@ class ShowViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @objc func applyButtonAction() {
+        print("I'm clicked")
+    }
+    
     /*
     // MARK: - Navigation
 

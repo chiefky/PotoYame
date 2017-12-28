@@ -37,13 +37,13 @@ class BaseTabBarController: UITabBarController {
         homeNav.tabBarItem.image = #imageLiteral(resourceName: "home")
         homeNav.tabBarItem.selectedImage = #imageLiteral(resourceName: "press-home")
         
-        let picVC = FriendViewController()
+        let picVC = ShowViewController()
         let picNav = BaseNavigationController(rootViewController: picVC)
         picNav.tabBarItem.title = "展示"
         picNav.tabBarItem.image = #imageLiteral(resourceName: "pic")
         picNav.tabBarItem.selectedImage = #imageLiteral(resourceName: "press-pic")
 
-        let infoVC = ShowViewController()
+        let infoVC = FriendViewController()
         let infoNav = BaseNavigationController(rootViewController: infoVC)
         infoNav.tabBarItem.title = "资料"
         infoNav.tabBarItem.image = #imageLiteral(resourceName: "study")
