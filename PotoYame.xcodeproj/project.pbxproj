@@ -28,6 +28,7 @@
 		018585ED1FF10AC00004617F /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585EC1FF10AC00004617F /* BaseNavigationController.swift */; };
 		018585EF1FF10BD00004617F /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585EE1FF10BD00004617F /* UIImageExtensions.swift */; };
 		018586371FF221140004617F /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018586361FF221140004617F /* CenterViewController.swift */; };
+		01A2F6EE1FF623F700680B97 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A2F6ED1FF623F700680B97 /* CustomImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		018585EC1FF10AC00004617F /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		018585EE1FF10BD00004617F /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		018586361FF221140004617F /* CenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		01A2F6ED1FF623F700680B97 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				0139E1CE1FF38FDB00307DE6 /* BaseCustonButton.swift */,
-				0139E1DF1FF5037E00307DE6 /* UIViewExtension.swift */,
 				0139E1D01FF39FD500307DE6 /* PotoView.swift */,
+				01A2F6ED1FF623F700680B97 /* CustomImageView.swift */,
 			);
 			path = buttons;
 			sourceTree = "<group>";
@@ -181,6 +183,7 @@
 		018585DD1FF0FA280004617F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0139E1DF1FF5037E00307DE6 /* UIViewExtension.swift */,
 				018585DE1FF0FA6A0004617F /* UIColorExtensions.swift */,
 				018585EE1FF10BD00004617F /* UIImageExtensions.swift */,
 			);
@@ -356,6 +359,7 @@
 				0139E1CF1FF38FDB00307DE6 /* BaseCustonButton.swift in Sources */,
 				018585ED1FF10AC00004617F /* BaseNavigationController.swift in Sources */,
 				018585A91FF0CB580004617F /* AppDelegate.swift in Sources */,
+				01A2F6EE1FF623F700680B97 /* CustomImageView.swift in Sources */,
 				018585D81FF0D09C0004617F /* BaseTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,9 +20,10 @@ extension UIImage {
         self.init(cgImage:image!.cgImage!,scale:UIScreen.main.scale,orientation: image!.imageOrientation)
     }
 
+    // 不通
     func getPixelColor(pos:CGPoint) -> UIColor? {
         let imageDataProvider = self.cgImage?.dataProvider
-
+        
         let pixelData = imageDataProvider?.data
         let data:UnsafePointer<UInt8> = CFDataGetBytePtr(pixelData)
         let pixelInfo: Int = ((Int(self.size.width) * Int(pos.y)) + Int(pos.x)) * 4
@@ -34,8 +35,8 @@ extension UIImage {
         
         return UIColor.init(red: r, green: g, blue: b, alpha: a)
     }
-    
-    
+
+    // 不通
     func colorAtPixel(point:CGPoint) -> UIColor? {
         // Cancel if point is outside image coordinates
         let rect = CGRect(x: 0.0, y: 0.0, width: self.size.width, height: self.size.height)
