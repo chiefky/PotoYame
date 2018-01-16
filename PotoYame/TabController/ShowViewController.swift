@@ -17,6 +17,7 @@ class ShowViewController: UIViewController {
         let customButn = BaseCustonButton(type: .custom)
         customButn.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         customButn.setImage(#imageLiteral(resourceName: "Rukia"), for: .normal)
+        customButn.center = self.view.center
         self.view.addSubview(customButn)
         customButn.addTarget(self, action: #selector(applyButtonAction), for: .touchUpInside)
 

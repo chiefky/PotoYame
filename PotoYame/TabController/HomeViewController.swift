@@ -7,19 +7,24 @@
 //
 
 import UIKit
+import Alamofire
 
 class HomeViewController: UIViewController {
+    fileprivate let homeCell = "HomeTableViewCell"
+    @IBOutlet weak var homeTableView: UITableView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetchAllRooms { (rooms) in
+            print("rooms:\(String(describing: rooms))",rooms)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = DefaultTheme.viewBackgroundColor
-        
-        let poto = PotoView()
-        poto.frame = CGRect(x: 20, y: 20, width: SCREENWIDTH-40, height: 100)
-        self.view.addSubview(poto)
-        
-        showAImage(imageName: "Rukia")
-    
+      
+        homeTableView.register(UINib(nibName: homeCell, bundle: Bundle.main), forCellReuseIdentifier: homeCell)
+
         // Do any additional setup after loading the view.
     }
 
@@ -29,55 +34,70 @@ class HomeViewController: UIViewController {
     }
     
 
-    func showAImage(imageName:String) {
-        let image = UIImage(named: imageName)
+    // MARK: - Data
+    func fetchAllRooms(completion: @escaping ([PicItemModel]?) -> Void) {
+//        let url = URL(string: "http://localhost:5984/rooms/_all_docs?include_docs=true")!
+       
+        Alamofire.request(
+            URL(string: "http://localhost:5984/rooms/_all_docs")!,
+            method: .get,
+            parameters: ["include_docs": "true"])
+            .validate()
+            .responseJSON { (response) -> Void in
+                guard response.result.isSuccess else {
+                    print("Error while fetching remote rooms: \(response.result.error)")
+                    completion(nil)
+                    return
+                }
+                
+//                guard let value = response.result.value as? [String: Any],
+//                    let rows = value["rows"] as? [[String: Any]] else {
+//                        print("Malformed data received from fetchAllRooms service")
+//                        completion(nil)
+//                        return
+//                }
+                
+//                var json: NSDictionary? = nil
+                var rooms:[PicItemModel]? = nil
+                do {
+                    let decoder = JSONDecoder()
+                    rooms = try decoder.decode([PicItemModel].self, from: response.data!)
+                } catch {
+                    print("error======")
+                }
+            
+                
+//                let rooms = rows.flatMap({ (roomDict) -> PicItemModel? in
+//                    return PicItemModel(from: roomDict as! Decoder)
+//                })
+                
+                completion(rooms)
+        }
         
-        let size = image?.size
-        
-        // 平移
-//        UIGraphicsBeginImageContextWithOptions(CGSize(width: ((size?.width)! * 2) ,height: (size?.height)!), false, 0)
-//        image?.draw(at: CGPoint(x:0,y:0))
-//        image?.draw(at:  CGPoint(x:(size?.width)!,y:0))
-
-
-        //
-        UIGraphicsBeginImageContextWithOptions(CGSize(width: ((size?.width)! / 2) ,height: (size?.height)!), false, 0);
-        
-        let width = (size?.width)! * (-1.0) / 2.0
-        
-        image?.draw(at: CGPoint(x: width,y:0))
-        let resultImg = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        let imageView = UIImageView(image:resultImg)
-        self.view.addSubview(imageView)
-        imageView.center = self.view.center
-        
-//        UIGraphicsBeginImageContextWithOptions(CGSizeMake(sz.width*2, sz.height), NO, 0);
-        
-//        [mars drawAtPoint:CGPointMake(0,0)];
-        
-//        [mars drawAtPoint:CGPointMake(sz.width,0)];
-        
-//        UIImage* im = UIGraphicsGetImageFromCurrentImageContext();
-        
-//        UIGraphicsEndImageContext();
-        
-//        UIImageView* iv = [[UIImageView alloc] initWithImage:im];
-        
-//        [self.window.rootViewController.view addSubview: iv];
-        
-//        iv.center = self.window.center;
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let model = self.photoModels[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: homeCell, for: indexPath) as! HomeTableViewCell
+        
+        return cell
+    }
+    
+
+}
+

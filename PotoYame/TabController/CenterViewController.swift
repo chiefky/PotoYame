@@ -21,15 +21,28 @@ class CenterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func showAImage(imageName:String) {
+        let image = UIImage(named: imageName)
+        
+        let size = image?.size
+        
+        // 平移
+        //        UIGraphicsBeginImageContextWithOptions(CGSize(width: ((size?.width)! * 2) ,height: (size?.height)!), false, 0)
+        //        image?.draw(at: CGPoint(x:0,y:0))
+        //        image?.draw(at:  CGPoint(x:(size?.width)!,y:0))
+        
+        
+        // 裁剪
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: ((size?.width)! / 2) ,height: (size?.height)!), false, 0);
+        let width = (size?.width)! * (-1.0) / 2.0
+        image?.draw(at: CGPoint(x: width,y:0))
+        let resultImg = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        let imageView = UIImageView(image:resultImg)
+        self.view.addSubview(imageView)
+        imageView.center = self.view.center
+        
     }
-    */
 
 }

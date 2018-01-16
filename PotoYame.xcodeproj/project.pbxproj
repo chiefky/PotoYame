@@ -10,6 +10,10 @@
 		0139E1CF1FF38FDB00307DE6 /* BaseCustonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139E1CE1FF38FDB00307DE6 /* BaseCustonButton.swift */; };
 		0139E1D11FF39FD500307DE6 /* PotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139E1D01FF39FD500307DE6 /* PotoView.swift */; };
 		0139E1E01FF5037E00307DE6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0139E1DF1FF5037E00307DE6 /* UIViewExtension.swift */; };
+		013C2B441FFF6E4000C02179 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013C2B431FFF6E4000C02179 /* UIImageViewExtension.swift */; };
+		013C2B461FFF729100C02179 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01A2F6F61FFCB14500680B97 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		01537A93200C9AE800CD6C03 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01537A92200C9AE800CD6C03 /* HomeTableViewCell.xib */; };
+		01537A95200CA06900CD6C03 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01537A94200CA06900CD6C03 /* HomeViewController.xib */; };
 		018585A91FF0CB580004617F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585A81FF0CB580004617F /* AppDelegate.swift */; };
 		018585AB1FF0CB580004617F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585AA1FF0CB580004617F /* ViewController.swift */; };
 		018585AE1FF0CB580004617F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018585AC1FF0CB580004617F /* Main.storyboard */; };
@@ -29,6 +33,9 @@
 		018585EF1FF10BD00004617F /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018585EE1FF10BD00004617F /* UIImageExtensions.swift */; };
 		018586371FF221140004617F /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018586361FF221140004617F /* CenterViewController.swift */; };
 		01A2F6EE1FF623F700680B97 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A2F6ED1FF623F700680B97 /* CustomImageView.swift */; };
+		01A2F6F11FFB7CEB00680B97 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A2F6F01FFB7CEB00680B97 /* HomeTableViewCell.swift */; };
+		01A2F6F41FFB7E2900680B97 /* PicItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A2F6F31FFB7E2900680B97 /* PicItemModel.swift */; };
+		01A2F6F71FFCB14500680B97 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A2F6F61FFCB14500680B97 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +55,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		013C2B451FFF728700C02179 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				013C2B461FFF729100C02179 /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0139E1CE1FF38FDB00307DE6 /* BaseCustonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustonButton.swift; sourceTree = "<group>"; };
 		0139E1D01FF39FD500307DE6 /* PotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotoView.swift; sourceTree = "<group>"; };
 		0139E1DF1FF5037E00307DE6 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		013C2B431FFF6E4000C02179 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		01537A92200C9AE800CD6C03 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		01537A94200CA06900CD6C03 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		018585A51FF0CB580004617F /* PotoYame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PotoYame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		018585A81FF0CB580004617F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		018585AA1FF0CB580004617F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +100,9 @@
 		018585EE1FF10BD00004617F /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		018586361FF221140004617F /* CenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
 		01A2F6ED1FF623F700680B97 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		01A2F6F01FFB7CEB00680B97 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		01A2F6F31FFB7E2900680B97 /* PicItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicItemModel.swift; sourceTree = "<group>"; };
+		01A2F6F61FFCB14500680B97 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A2F6F71FFCB14500680B97 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +148,7 @@
 				018585BC1FF0CB580004617F /* PotoYameTests */,
 				018585C71FF0CB590004617F /* PotoYameUITests */,
 				018585A61FF0CB580004617F /* Products */,
+				01A2F6F51FFCB14500680B97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +168,7 @@
 				018585A81FF0CB580004617F /* AppDelegate.swift */,
 				018585AA1FF0CB580004617F /* ViewController.swift */,
 				018585DB1FF0F9CC0004617F /* Theme.swift */,
+				01A2F6F21FFB7DF200680B97 /* Models */,
 				0139E1CD1FF38FAE00307DE6 /* buttons */,
 				018585E41FF104980004617F /* TabController */,
 				018585DD1FF0FA280004617F /* Extensions */,
@@ -184,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				0139E1DF1FF5037E00307DE6 /* UIViewExtension.swift */,
+				013C2B431FFF6E4000C02179 /* UIImageViewExtension.swift */,
 				018585DE1FF0FA6A0004617F /* UIColorExtensions.swift */,
 				018585EE1FF10BD00004617F /* UIImageExtensions.swift */,
 			);
@@ -193,7 +223,9 @@
 		018585E41FF104980004617F /* TabController */ = {
 			isa = PBXGroup;
 			children = (
+				01A2F6EF1FFB7CB600680B97 /* TabViews */,
 				018585E21FF104920004617F /* HomeViewController.swift */,
+				01537A94200CA06900CD6C03 /* HomeViewController.xib */,
 				018585E51FF104C40004617F /* ShowViewController.swift */,
 				018585E71FF107180004617F /* FriendViewController.swift */,
 				018585E91FF107440004617F /* SettingViewController.swift */,
@@ -210,6 +242,31 @@
 			path = Navi;
 			sourceTree = "<group>";
 		};
+		01A2F6EF1FFB7CB600680B97 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				01A2F6F01FFB7CEB00680B97 /* HomeTableViewCell.swift */,
+				01537A92200C9AE800CD6C03 /* HomeTableViewCell.xib */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		01A2F6F21FFB7DF200680B97 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01A2F6F31FFB7E2900680B97 /* PicItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		01A2F6F51FFCB14500680B97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01A2F6F61FFCB14500680B97 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,6 +277,7 @@
 				018585A11FF0CB580004617F /* Sources */,
 				018585A21FF0CB580004617F /* Frameworks */,
 				018585A31FF0CB580004617F /* Resources */,
+				013C2B451FFF728700C02179 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -319,6 +377,8 @@
 			files = (
 				018585B31FF0CB580004617F /* LaunchScreen.storyboard in Resources */,
 				018585B01FF0CB580004617F /* Assets.xcassets in Resources */,
+				01537A95200CA06900CD6C03 /* HomeViewController.xib in Resources */,
+				01537A93200C9AE800CD6C03 /* HomeTableViewCell.xib in Resources */,
 				018585AE1FF0CB580004617F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,13 +405,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				018585AB1FF0CB580004617F /* ViewController.swift in Sources */,
+				01A2F6F41FFB7E2900680B97 /* PicItemModel.swift in Sources */,
 				018585EA1FF107440004617F /* SettingViewController.swift in Sources */,
 				018585DC1FF0F9CD0004617F /* Theme.swift in Sources */,
 				018586371FF221140004617F /* CenterViewController.swift in Sources */,
 				018585DA1FF0D3960004617F /* BaseTabbar.swift in Sources */,
 				018585E31FF104920004617F /* HomeViewController.swift in Sources */,
+				01A2F6F11FFB7CEB00680B97 /* HomeTableViewCell.swift in Sources */,
 				0139E1E01FF5037E00307DE6 /* UIViewExtension.swift in Sources */,
 				018585EF1FF10BD00004617F /* UIImageExtensions.swift in Sources */,
+				013C2B441FFF6E4000C02179 /* UIImageViewExtension.swift in Sources */,
 				018585E81FF107180004617F /* FriendViewController.swift in Sources */,
 				018585DF1FF0FA6A0004617F /* UIColorExtensions.swift in Sources */,
 				018585E61FF104C40004617F /* ShowViewController.swift in Sources */,
@@ -528,6 +591,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5P7L7Q852;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PotoYame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -544,6 +611,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N5P7L7Q852;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PotoYame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

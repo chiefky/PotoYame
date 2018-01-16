@@ -30,6 +30,18 @@ class BaseCustonButton: UIButton {
     }
     
     // MARK - hit
+    func isAlphaVisableAtPoint(point: CGPoint , image: UIImage) -> Bool {
+        // Correction for image scaling including contentmode
+        let pt = point.applying(self.imageView!.viewToImageTransform());
+        let touchPoint = pt
+        
+        let pixelUIColor = image.colorAtPixel(point: touchPoint) //image.getPixelColor(pos: touchPoint)?.cgColor // colorAtPonit(point: touchPoint)?.cgColor //  image.colorAtPixel(point: touchPoint)?.cgColor  //  [ CGColor];
+        var alpha:CGFloat = 0.0
+        pixelUIColor?.getRed(nil, green: nil, blue: nil, alpha:&alpha)
+        return alpha >= 0.1
+    }
+    
+    
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
 
         let superResult = super.point(inside: point, with: event)
@@ -37,6 +49,11 @@ class BaseCustonButton: UIButton {
             return superResult
         }
 
+        
+        let result = isAlphaVisableAtPoint(point: point, image: self.currentImage!)
+        
+        return result
+        
         if __CGPointEqualToPoint(point, previousPoint) {
             return previousTouchResult
         } else {
